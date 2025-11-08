@@ -1,0 +1,51 @@
+
+================================================================================
+ОТЧЕТ ПО DL МОДЕЛИ: ruBERT
+================================================================================
+
+ПАРАМЕТРЫ МОДЕЛИ:
+  • Модель: DeepPavlov/rubert-base-cased
+  • Устройство: mps
+  • Max sequence length: 128
+  • Batch size: 64
+  • Epochs: 10
+  • Learning rate: 2e-05
+
+МЕТРИКИ:
+  • Accuracy:     0.6954 (69.54%)
+  • Macro F1:     0.5341
+  • Weighted F1:  0.6856
+
+ДАННЫЕ:
+  • Train размер: 178,872 записей
+  • Test размер: 44,719 записей
+  • Классов: 191
+  • Время обучения: 528.4 минут
+
+ИСТОРИЯ ОБУЧЕНИЯ:
+  Epoch 1: Train Loss=2.8876, Val Loss=1.6636, Val Acc=0.6060
+  Epoch 2: Train Loss=1.4217, Val Loss=1.2682, Val Acc=0.6706
+  Epoch 3: Train Loss=1.1003, Val Loss=1.1817, Val Acc=0.6846
+  Epoch 4: Train Loss=0.9127, Val Loss=1.1690, Val Acc=0.6954
+  Epoch 5: Train Loss=0.7670, Val Loss=1.1892, Val Acc=0.6920
+  Epoch 6: Train Loss=0.6450, Val Loss=1.2375, Val Acc=0.6898
+  Epoch 7: Train Loss=0.5418, Val Loss=1.2902, Val Acc=0.6867
+  Epoch 8: Train Loss=0.4579, Val Loss=1.3456, Val Acc=0.6827
+  Epoch 9: Train Loss=0.3949, Val Loss=1.3906, Val Acc=0.6835
+  Epoch 10: Train Loss=0.3514, Val Loss=1.4134, Val Acc=0.6821
+
+ТОП-5 КЛАССОВ ПО F1-SCORE:
+  • Автошкола                                F1=0.954, Precision=0.956, Recall=0.951
+  • Детский сад, ясли                        F1=0.947, Precision=0.938, Recall=0.956
+  • Двери                                    F1=0.921, Precision=0.928, Recall=0.914
+  • Салон оптики                             F1=0.917, Precision=0.922, Recall=0.912
+  • Аптека                                   F1=0.913, Precision=0.949, Recall=0.881
+
+СОЗДАННЫЕ ФАЙЛЫ:
+  ✓ model_rubert_best.pt
+  ✓ model_rubert_results.pkl
+  ✓ dl_rubert_training_curves.png
+  ✓ dl_rubert_top20_classes.png
+  ✓ dl_rubert_report.txt
+
+СЛЕДУЮЩИЙ ШАГ: model_comparison.py

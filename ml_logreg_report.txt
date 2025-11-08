@@ -1,0 +1,37 @@
+
+================================================================================
+ОТЧЕТ ПО ML МОДЕЛИ: LOGISTIC REGRESSION + TF-IDF
+================================================================================
+
+ПАРАМЕТРЫ МОДЕЛИ:
+  • Алгоритм: Logistic Regression
+  • C (регуляризация): 5.0
+  • Class weight: balanced
+  • TF-IDF max_features: 10000
+  • N-grams: (1, 2)
+
+МЕТРИКИ:
+  • Accuracy:     0.6237 (62.37%)
+  • Macro F1:     0.5630
+  • Weighted F1:  0.6362
+
+ДАННЫЕ:
+  • Train размер: 158,290 записей
+  • Test размер: 39,573 записей
+  • Классов: 78
+  • Время обучения: 36.78 секунд
+
+ТОП-5 КЛАССОВ ПО F1-SCORE:
+  • Автошкола                                F1=0.932, Precision=0.934, Recall=0.929
+  • Детский сад, ясли                        F1=0.930, Precision=0.936, Recall=0.923
+  • Аптека                                   F1=0.878, Precision=0.899, Recall=0.857
+  • Театр                                    F1=0.868, Precision=0.891, Recall=0.845
+  • Автомойка                                F1=0.830, Precision=0.828, Recall=0.831
+
+СОЗДАННЫЕ ФАЙЛЫ:
+  ✓ model_logreg.pkl
+  ✓ ml_logreg_results.png
+  ✓ ml_logreg_confusion_matrix.png
+  ✓ ml_logreg_report.txt
+
+СЛЕДУЮЩИЙ ШАГ: dl_rubert.py
